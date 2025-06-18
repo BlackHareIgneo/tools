@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Entrada: log.txt
+# Salida: log_limpio.txt
+
+sed -E '
+s/(^| )?(Key[^ ]*|Backspace|Enter|shift|Ctrl|Alt)( |$)?//g
+' datossu | sed -E '
+s/  +/ /g
+s/^ //
+s/ $//
+' > datos
+
+echo "[✔] Log limpio guardado en log_limpio.txt"
